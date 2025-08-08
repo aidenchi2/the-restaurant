@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>The Restaurant — Your New Favorite Place to Eat™️</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(133, 50, 50);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: firebrick;
+  font-family: Verdana;
+  width: 100vw;
+  border: 2px solid DarkRed;
+  position: fixed;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h3 {
+  text-align: center;
+  font-family: Verdana;
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* spacing between images */
+  margin-top: 30px; /* space above the images */
+}
+
+.image-row img {
+  width: 300px; /* or whatever size you prefer */
+  height: 240px;
+  border: 1.2px solid red;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.wordart {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFD700; /* Gold fill */
+  -webkit-text-stroke: 2px navy; /* Blue outline */
+  text-shadow:
+    1px 1px 0 #000,   /* shadow for depth */
+    2px 2px 0 #888;   /* extra shadow */
+  font-family: Impact, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  font-family: Verdana;
+}
+
+p {
+  margin-left: 160px;
+  color: white;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+  font-family: Verdana;
+}
+
+hr {
+  height: 4px; /* Set the thickness of the line */
+  background-color: firebrick; /* Set the desired color */
+  border: 1px solid red; /* Remove the default border which can interfere with the background-color */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  #volume-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #444;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+  }
+  #volume-btn:hover {
+    background: #666;
+  }
+  /* Simple volume icon (speaker) */
+  #volume-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="file:///Users/aidenchinana/Desktop/Desktop/restweb/menu.html">Menu</a></li>
+  <li><a href="file:///Users/aidenchinana/Desktop/Desktop/restweb/order.html">Order Online</a></li>
+  <li><a href="file:///Users/aidenchinana/Desktop/Desktop/restweb/banquets.html">Banquets</a></li>
+  <li><a href="file:///Users/aidenchinana/Desktop/Desktop/restweb/catering.html">Catering</a></li>
+</ul>
+<div id="page">
+<br>
+<br>
+<br>
+<h1>The Restaurant</h1>
+<h3><i>Your new favorite place to eat.</i></h3>
+<div class="image-row">
+  <img src="pizza.jpg" alt="Pizza">
+  <img src="pizza.jpg" alt="Pizza">
+  <img src="pizza.jpg" alt="Pizza">
+</div>
+<br>
+<br>
+<hr>
+<br>
+<h2 style="margin-left:160px;">Banquets & Parties</h2>
+<p style="margin-left:160px;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+  Aenean interdum iaculis elit, sit amet porttitor purus porta sagittis. <br>
+  Vitae hendrerit lorem venenatis quis!
+</p>
+
+<div style="text-align:right; padding-right:160px;">
+  <h2>Wide Variety of Foods</h2>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+  Aenean interdum iaculis elit, sit amet porttitor purus porta sagittis. <br>
+  Vitae hendrerit lorem venenatis quis!
+  </p>
+</div>
+
+<h2 style="margin-left:160px;">Large Selection of Wines</h2>
+<p style="margin-left:160px;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+  Aenean interdum iaculis elit, sit amet porttitor purus porta sagittis. <br>
+  Vitae hendrerit lorem venenatis quis!
+</p>
+
+<div style="text-align:right; padding-right:160px;">
+  <h2>Trivia Night Every Thursday</h2>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+  Aenean interdum iaculis elit, sit amet porttitor purus porta sagittis. <br>
+  Vitae hendrerit lorem venenatis quis!
+  </p>
+</div>
+<br>
+<br>
+<hr>
+<p style="text-size:12px;font-family:TimesNewRoman;margin-left:0px;text-align:center;">Property of The Restaurant, 2001–2025</p>
+
+
+</div> <!-- for the page, don't delete -->
+
+<audio id="background-audio" loop>
+  <source src="jazzman.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<button id="volume-btn" aria-label="Toggle Music">
+  <svg id="volume-icon" viewBox="0 0 24 24">
+    <path d="M3 9v6h4l5 5V4L7 9H3z"/>
+    <path id="mute-cross" style="display:none;" d="M16 7l5 5-5 5" stroke="white" stroke-width="2" fill="none"/>
+  </svg>
+</button>
+
+<script>
+  const audio = document.getElementById('background-audio');
+  const btn = document.getElementById('volume-btn');
+  const muteCross = document.getElementById('mute-cross');
+
+  // Start audio muted and paused initially (to avoid autoplay issues)
+  audio.volume = 0.5;
+  audio.muted = true;
+
+  btn.addEventListener('click', () => {
+    if (audio.muted) {
+      audio.muted = false;
+      audio.play();
+      muteCross.style.display = 'none'; // hide mute cross
+    } else {
+      audio.muted = true;
+      muteCross.style.display = 'inline'; // show mute cross
+    }
+  });
+</script>
+
+
+</div>
+
+
+</body>
+</html>
